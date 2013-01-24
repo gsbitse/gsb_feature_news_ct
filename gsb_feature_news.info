@@ -1,7 +1,7 @@
 name = GSB Feature News
 description = The feature for creating the GSB News content type
 core = 7.x
-package = Features
+package = GSB
 version = 7.x-1.0
 project = gsb_feature_news
 dependencies[] = ctools
