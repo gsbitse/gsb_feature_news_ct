@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * gsb_feature_news.features.field.inc
+ * gsb_feature_news_ct.features.field.inc
  */
 
 /**
  * Implements hook_field_default_fields().
  */
-function gsb_feature_news_field_default_fields() {
+function gsb_feature_news_ct_field_default_fields() {
   $fields = array();
 
   // Exported field: 'node-gsb_news-body'.

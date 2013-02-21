@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * gsb_feature_news.features.inc
+ * gsb_feature_news_ct.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function gsb_feature_news_ctools_plugin_api() {
+function gsb_feature_news_ct_ctools_plugin_api() {
   list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
@@ -17,7 +17,7 @@ function gsb_feature_news_ctools_plugin_api() {
 /**
  * Implements hook_node_info().
  */
-function gsb_feature_news_node_info() {
+function gsb_feature_news_ct_node_info() {
   $items = array(
     'gsb_news' => array(
       'name' => t('News'),
