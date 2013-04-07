@@ -19,10 +19,10 @@ function gsb_feature_news_ct_ctools_plugin_api() {
  */
 function gsb_feature_news_ct_node_info() {
   $items = array(
-    'gsb_news' => array(
+    'news' => array(
       'name' => t('News'),
       'base' => 'node_content',
-      'description' => t('The GSB Public News content type is used for news on the GSB Public web site.'),
+      'description' => t('Adds a News Article'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
