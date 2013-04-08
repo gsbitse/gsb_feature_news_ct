@@ -22,13 +22,13 @@ function gsb_feature_news_ct_strongarm() {
           'weight' => '13',
         ),
         'title' => array(
-          'weight' => '1',
+          'weight' => '2',
         ),
         'path' => array(
           'weight' => '12',
         ),
         'workbench_access' => array(
-          'weight' => '11',
+          'weight' => '0',
         ),
       ),
       'display' => array(),
