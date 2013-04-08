@@ -87,7 +87,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'enable' => 0,
           'insert_plugin' => '',
         ),
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -101,7 +101,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '5',
+        'weight' => '4',
       ),
       'workbench_access_field' => 0,
     ),
@@ -196,7 +196,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'options_select',
-        'weight' => '10',
+        'weight' => '11',
       ),
       'workbench_access_field' => 0,
     ),
@@ -293,7 +293,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '15',
+        'weight' => '16',
       ),
       'workbench_access_field' => 0,
     ),
@@ -379,7 +379,7 @@ function gsb_feature_news_ct_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_date_published',
       'label' => 'Date Published',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'default_value' => 'now',
         'default_value2' => 'same',
@@ -402,7 +402,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => '3',
+        'weight' => '2',
       ),
       'workbench_access_field' => 0,
     ),
@@ -594,7 +594,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'rows' => '3',
         ),
         'type' => 'text_textarea',
-        'weight' => '4',
+        'weight' => '3',
       ),
       'workbench_access_field' => 0,
     ),
@@ -687,7 +687,7 @@ function gsb_feature_news_ct_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            'private' => 'private',
+            'private' => 0,
             'public' => 'public',
             'vimeo' => 0,
             'youtube' => 0,
@@ -714,7 +714,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
-        'weight' => '7',
+        'weight' => '6',
       ),
       'workbench_access_field' => 0,
     ),
@@ -806,7 +806,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'options_buttons',
-        'weight' => '6',
+        'weight' => '5',
       ),
       'workbench_access_field' => 0,
     ),
@@ -903,7 +903,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '8',
+        'weight' => '7',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1004,6 +1004,103 @@ function gsb_feature_news_ct_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-news-field_news_byline'.
+  $fields['node-news-field_news_byline'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_news_byline',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'news',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => 17,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'node',
+      'field_name' => 'field_news_byline',
+      'label' => 'Byline',
+      'required' => 0,
+      'settings' => array(
+        'linkit' => array(
+          'enable' => 0,
+          'insert_plugin' => '',
+        ),
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '8',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
   // Exported field: 'node-news-field_news_type'.
   $fields['node-news-field_news_type'] = array(
     'field_config' => array(
@@ -1022,8 +1119,8 @@ function gsb_feature_news_ct_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'School Story' => 'School Story',
           'Press Release' => 'Press Release',
+          'School News' => 'School News',
         ),
         'allowed_values_function' => '',
       ),
@@ -1034,7 +1131,7 @@ function gsb_feature_news_ct_field_default_fields() {
       'bundle' => 'news',
       'default_value' => array(
         0 => array(
-          'value' => 'School Story',
+          'value' => 'Press Release',
         ),
       ),
       'deleted' => '0',
@@ -1077,7 +1174,7 @@ function gsb_feature_news_ct_field_default_fields() {
       'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_news_type',
-      'label' => 'News Type',
+      'label' => 'Type',
       'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -1089,92 +1186,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'options_buttons',
-        'weight' => '1',
-      ),
-      'workbench_access_field' => 0,
-    ),
-  );
-
-  // Exported field: 'node-news-field_person_other'.
-  $fields['node-news-field_person_other'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '-1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_person_other',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'field_collection',
-      'settings' => array(
-        'hide_blank_items' => 1,
-        'path' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'field_collection',
-    ),
-    'field_instance' => array(
-      'bundle' => 'news',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'field_collection',
-          'settings' => array(
-            'add' => 'Add',
-            'conditions' => array(),
-            'delete' => 'Delete',
-            'description' => TRUE,
-            'edit' => 'Edit',
-            'view_mode' => 'full',
-          ),
-          'type' => 'field_collection_view',
-          'weight' => 9,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'ical' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'tiny' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'ds_extras_field_template' => '',
-      'entity_type' => 'node',
-      'field_name' => 'field_person_other',
-      'label' => 'Byline',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'field_collection',
-        'settings' => array(
-          'maxlength_js_label' => '',
-        ),
-        'type' => 'field_collection_embed',
-        'weight' => '9',
+        'weight' => '0',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1188,14 +1200,7 @@ function gsb_feature_news_ct_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_person_staff_ref',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
+      'foreign keys' => array(),
       'indexes' => array(
         'target_id' => array(
           0 => 'target_id',
@@ -1288,7 +1293,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '2',
+        'weight' => '9',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1480,7 +1485,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '16',
+        'weight' => '17',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1575,7 +1580,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'options_select',
-        'weight' => '11',
+        'weight' => '15',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1595,10 +1600,10 @@ function gsb_feature_news_ct_field_default_fields() {
   t('Header Image Style');
   t('Industry');
   t('Media Contact');
-  t('News Type');
   t('Region');
   t('Tag');
   t('Target Audience');
+  t('Type');
 
   return $fields;
 }
