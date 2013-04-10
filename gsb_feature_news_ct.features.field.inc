@@ -50,7 +50,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 5,
+          'weight' => '5',
         ),
         'featured' => array(
           'label' => 'above',
@@ -63,6 +63,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -154,7 +160,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 10,
+          'weight' => '10',
         ),
         'featured' => array(
           'label' => 'above',
@@ -167,6 +173,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '11',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -249,7 +261,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 15,
+          'weight' => '15',
         ),
         'featured' => array(
           'label' => 'above',
@@ -262,6 +274,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '16',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -322,7 +340,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'second' => 0,
           'year' => 'year',
         ),
-        'repeat' => '0',
+        'repeat' => 0,
         'timezone_db' => '',
         'todate' => '',
         'tz_handling' => 'none',
@@ -348,7 +366,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
-          'weight' => 3,
+          'weight' => '3',
         ),
         'featured' => array(
           'label' => 'above',
@@ -361,6 +379,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -455,7 +479,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 12,
+          'weight' => '12',
         ),
         'featured' => array(
           'label' => 'above',
@@ -468,6 +492,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '13',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -543,7 +573,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 4,
+          'weight' => '4',
         ),
         'featured' => array(
           'label' => 'above',
@@ -556,6 +586,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -643,7 +679,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'file_default',
-          'weight' => 7,
+          'weight' => '7',
         ),
         'featured' => array(
           'label' => 'above',
@@ -656,6 +692,16 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'hidden',
+          'module' => 'file_entity',
+          'settings' => array(
+            'conditions' => array(),
+            'file_view_mode' => 'default',
+          ),
+          'type' => 'file_rendered',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -764,7 +810,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'list_default',
-          'weight' => 6,
+          'weight' => '6',
         ),
         'featured' => array(
           'label' => 'above',
@@ -777,6 +823,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '10',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -854,7 +906,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 8,
+          'weight' => '8',
         ),
         'featured' => array(
           'label' => 'above',
@@ -867,6 +919,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '9',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -956,7 +1014,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 13,
+          'weight' => '13',
         ),
         'featured' => array(
           'label' => 'above',
@@ -969,6 +1027,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '14',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1046,7 +1110,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 17,
+          'weight' => '17',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1059,6 +1123,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '18',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1144,7 +1214,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'list_default',
-          'weight' => 1,
+          'weight' => '1',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1157,6 +1227,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1243,7 +1319,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 2,
+          'weight' => '2',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1256,6 +1332,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1346,7 +1428,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 14,
+          'weight' => '14',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1359,6 +1441,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '15',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1441,7 +1529,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 16,
+          'weight' => '16',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1454,6 +1542,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '17',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1538,7 +1632,7 @@ function gsb_feature_news_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 11,
+          'weight' => '11',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1551,6 +1645,12 @@ function gsb_feature_news_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'megamenu' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '12',
         ),
         'teaser' => array(
           'label' => 'above',
