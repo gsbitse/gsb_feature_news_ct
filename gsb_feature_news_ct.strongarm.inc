@@ -49,6 +49,9 @@ function gsb_feature_news_ct_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'media_contact' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
