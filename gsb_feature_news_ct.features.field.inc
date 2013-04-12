@@ -155,11 +155,13 @@ function gsb_feature_news_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'taxonomy',
+          'module' => 'ds',
           'settings' => array(
             'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
           ),
-          'type' => 'taxonomy_term_reference_link',
+          'type' => 'ds_taxonomy_separator',
           'weight' => '14',
         ),
         'featured' => array(
@@ -256,11 +258,13 @@ function gsb_feature_news_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'taxonomy',
+          'module' => 'ds',
           'settings' => array(
             'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
           ),
-          'type' => 'taxonomy_term_reference_link',
+          'type' => 'ds_taxonomy_separator',
           'weight' => '18',
         ),
         'featured' => array(
@@ -474,11 +478,13 @@ function gsb_feature_news_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'taxonomy',
+          'module' => 'ds',
           'settings' => array(
             'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
           ),
-          'type' => 'taxonomy_term_reference_link',
+          'type' => 'ds_taxonomy_separator',
           'weight' => '16',
         ),
         'featured' => array(
@@ -1007,11 +1013,13 @@ function gsb_feature_news_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'taxonomy',
+          'module' => 'ds',
           'settings' => array(
             'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
           ),
-          'type' => 'taxonomy_term_reference_link',
+          'type' => 'ds_taxonomy_separator',
           'weight' => '17',
         ),
         'featured' => array(
@@ -1419,11 +1427,13 @@ function gsb_feature_news_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'taxonomy',
+          'module' => 'ds',
           'settings' => array(
             'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
           ),
-          'type' => 'taxonomy_term_reference_link',
+          'type' => 'ds_taxonomy_separator',
           'weight' => '13',
         ),
         'featured' => array(
@@ -1520,11 +1530,13 @@ function gsb_feature_news_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'taxonomy',
+          'module' => 'ds',
           'settings' => array(
             'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
           ),
-          'type' => 'taxonomy_term_reference_link',
+          'type' => 'ds_taxonomy_separator',
           'weight' => '19',
         ),
         'featured' => array(
@@ -1623,11 +1635,13 @@ function gsb_feature_news_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'taxonomy',
+          'module' => 'ds',
           'settings' => array(
             'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
           ),
-          'type' => 'taxonomy_term_reference_link',
+          'type' => 'ds_taxonomy_separator',
           'weight' => '15',
         ),
         'featured' => array(
