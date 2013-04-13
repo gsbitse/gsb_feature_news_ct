@@ -74,7 +74,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '14',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -183,10 +183,15 @@ function gsb_feature_news_ct_field_default_fields() {
           'weight' => '11',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '17',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -286,10 +291,15 @@ function gsb_feature_news_ct_field_default_fields() {
           'weight' => '16',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '16',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -391,10 +401,19 @@ function gsb_feature_news_ct_field_default_fields() {
           'weight' => '4',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'date',
+          'settings' => array(
+            'conditions' => array(),
+            'format_type' => 'long',
+            'fromto' => 'both',
+            'multiple_from' => '',
+            'multiple_number' => '',
+            'multiple_to' => '',
+            'show_repeat_rule' => 'show',
+          ),
+          'type' => 'date_default',
+          'weight' => '2',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -506,10 +525,15 @@ function gsb_feature_news_ct_field_default_fields() {
           'weight' => '13',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '15',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -600,10 +624,13 @@ function gsb_feature_news_ct_field_default_fields() {
           'weight' => '5',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '3',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -711,10 +738,14 @@ function gsb_feature_news_ct_field_default_fields() {
           'weight' => '0',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'file_entity',
+          'settings' => array(
+            'conditions' => array(),
+            'file_view_mode' => 'default',
+          ),
+          'type' => 'file_rendered',
+          'weight' => '0',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -838,7 +869,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '22',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -934,7 +965,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '21',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1041,10 +1072,15 @@ function gsb_feature_news_ct_field_default_fields() {
           'weight' => '14',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '13',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1140,7 +1176,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '19',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1241,7 +1277,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '15',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1347,7 +1383,7 @@ function gsb_feature_news_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '13',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1455,10 +1491,15 @@ function gsb_feature_news_ct_field_default_fields() {
           'weight' => '15',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '14',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1558,10 +1599,15 @@ function gsb_feature_news_ct_field_default_fields() {
           'weight' => '17',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '11',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1663,10 +1709,15 @@ function gsb_feature_news_ct_field_default_fields() {
           'weight' => '12',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'ds',
+          'settings' => array(
+            'conditions' => array(),
+            'taxonomy_term_link' => TRUE,
+            'taxonomy_term_separator' => ', ',
+          ),
+          'type' => 'ds_taxonomy_separator',
+          'weight' => '12',
         ),
         'tiny' => array(
           'label' => 'above',
