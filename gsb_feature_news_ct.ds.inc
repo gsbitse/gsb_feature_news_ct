@@ -84,9 +84,16 @@ function gsb_feature_news_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h2',
+        'class' => '',
+        'ft' => array(),
+        'conditions' => array(),
+      ),
     ),
   );
   $export['node|news|teaser'] = $ds_fieldsetting;
@@ -202,44 +209,41 @@ function gsb_feature_news_ct_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'news';
   $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'ds_2col';
+  $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
     'regions' => array(
-      'left' => array(
+      'ds_content' => array(
         0 => 'field_file_single_public',
-      ),
-      'right' => array(
-        1 => 'title',
-        2 => 'field_date_published',
+        1 => 'field_date_published',
+        2 => 'title',
         3 => 'field_editorial_summary',
         4 => 'group_tags_wrapper',
-        5 => 'field_tag',
-        6 => 'field_target_audience',
-        7 => 'field_industry',
-        8 => 'field_region',
-        9 => 'field_discipline',
-        10 => 'field_company_organization',
-        11 => 'field_business_insight_topic',
+        5 => 'field_business_insight_topic',
+        6 => 'field_company_organization',
+        7 => 'field_discipline',
+        8 => 'field_industry',
+        9 => 'field_region',
+        10 => 'field_target_audience',
+        11 => 'field_tag',
       ),
     ),
     'fields' => array(
-      'field_file_single_public' => 'left',
-      'title' => 'right',
-      'field_date_published' => 'right',
-      'field_editorial_summary' => 'right',
-      'group_tags_wrapper' => 'right',
-      'field_tag' => 'right',
-      'field_target_audience' => 'right',
-      'field_industry' => 'right',
-      'field_region' => 'right',
-      'field_discipline' => 'right',
-      'field_company_organization' => 'right',
-      'field_business_insight_topic' => 'right',
+      'field_file_single_public' => 'ds_content',
+      'field_date_published' => 'ds_content',
+      'title' => 'ds_content',
+      'field_editorial_summary' => 'ds_content',
+      'group_tags_wrapper' => 'ds_content',
+      'field_business_insight_topic' => 'ds_content',
+      'field_company_organization' => 'ds_content',
+      'field_discipline' => 'ds_content',
+      'field_industry' => 'ds_content',
+      'field_region' => 'ds_content',
+      'field_target_audience' => 'ds_content',
+      'field_tag' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'left' => 'div',
-      'right' => 'div',
+      'ds_content' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',

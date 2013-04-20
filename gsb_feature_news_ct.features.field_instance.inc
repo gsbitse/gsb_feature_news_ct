@@ -48,7 +48,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 11,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -205,7 +205,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 16,
+        'weight' => 18,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -280,7 +280,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'module' => 'date',
         'settings' => array(
           'conditions' => array(),
-          'format_type' => 'long',
+          'format_type' => 'medium',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -288,7 +288,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -374,7 +374,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 15,
+        'weight' => 19,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -525,7 +525,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'module' => 'file_entity',
         'settings' => array(
           'conditions' => array(),
-          'file_view_mode' => 'default',
+          'file_view_mode' => 'teaser',
         ),
         'type' => 'file_rendered',
         'weight' => 0,
@@ -625,7 +625,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 15,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -692,7 +692,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 14,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -773,7 +773,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 13,
+        'weight' => 20,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -840,7 +840,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 13,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -915,7 +915,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 12,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -984,7 +984,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 10,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -1066,7 +1066,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 14,
+        'weight' => 21,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -1140,7 +1140,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 11,
+        'weight' => 23,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -1216,7 +1216,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 12,
+        'weight' => 22,
       ),
       'tiny' => array(
         'label' => 'above',
