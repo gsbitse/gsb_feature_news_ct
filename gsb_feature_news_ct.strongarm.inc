@@ -52,17 +52,23 @@ function gsb_feature_news_ct_strongarm() {
       'media_contact' => array(
         'custom_settings' => FALSE,
       ),
+      'business_insight' => array(
+        'custom_settings' => FALSE,
+      ),
+      'people_fpp' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '13',
+          'weight' => '14',
         ),
         'title' => array(
           'weight' => '2',
         ),
         'path' => array(
-          'weight' => '12',
+          'weight' => '13',
         ),
         'workbench_access' => array(
           'weight' => '0',

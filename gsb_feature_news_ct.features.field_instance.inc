@@ -10,6 +10,63 @@
 function gsb_feature_news_ct_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-news-field_addthis'
+  $field_instances['node-news-field_addthis'] = array(
+    'bundle' => 'news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'addthis_displays',
+        'settings' => array(
+          'buttons_size' => 'addthis_16x16_style',
+          'conditions' => array(
+            0 => array(
+              'condition' => '',
+            ),
+          ),
+          'counter_orientation' => 'horizontal',
+          'extra_css' => '',
+          'share_services' => 'twitter, linkedin, facebook, google_plusone_share, email',
+        ),
+        'type' => 'addthis_basic_toolbox',
+        'weight' => 9,
+      ),
+      'megamenu' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_addthis',
+    'label' => 'AddThis',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'addthis',
+      'settings' => array(
+        'maxlength_js_label' => '',
+      ),
+      'type' => 'addthis_button_widget',
+      'weight' => 12,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-news-field_body'
   $field_instances['node-news-field_body'] = array(
     'bundle' => 'news',
@@ -601,7 +658,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 16,
       ),
       'featured' => array(
         'label' => 'above',
@@ -891,7 +948,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 15,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1247,6 +1304,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('AddThis');
   t('Body');
   t('Business Insight Topic');
   t('Byline');
