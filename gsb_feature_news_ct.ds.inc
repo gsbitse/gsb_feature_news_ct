@@ -84,7 +84,7 @@ function gsb_feature_news_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '2',
+      'weight' => '3',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -221,11 +221,11 @@ function gsb_feature_news_ct_ds_layout_settings_info() {
         3 => 'field_editorial_summary',
         4 => 'group_tags_wrapper',
         5 => 'field_business_insight_topic',
-        6 => 'field_company_organization',
+        6 => 'field_target_audience',
         7 => 'field_discipline',
         8 => 'field_industry',
         9 => 'field_region',
-        10 => 'field_target_audience',
+        10 => 'field_company_organization',
         11 => 'field_tag',
       ),
     ),
@@ -236,11 +236,11 @@ function gsb_feature_news_ct_ds_layout_settings_info() {
       'field_editorial_summary' => 'ds_content',
       'group_tags_wrapper' => 'ds_content',
       'field_business_insight_topic' => 'ds_content',
-      'field_company_organization' => 'ds_content',
+      'field_target_audience' => 'ds_content',
       'field_discipline' => 'ds_content',
       'field_industry' => 'ds_content',
       'field_region' => 'ds_content',
-      'field_target_audience' => 'ds_content',
+      'field_company_organization' => 'ds_content',
       'field_tag' => 'ds_content',
     ),
     'classes' => array(),

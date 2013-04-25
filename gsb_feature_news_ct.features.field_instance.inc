@@ -44,7 +44,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -105,7 +105,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 13,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -262,7 +262,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 18,
+        'weight' => 22,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -501,7 +501,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -682,7 +682,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 16,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -749,7 +749,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 15,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -897,7 +897,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 2,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -972,7 +972,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 14,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -1041,7 +1041,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 12,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -1273,7 +1273,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 22,
+        'weight' => 18,
       ),
       'tiny' => array(
         'label' => 'above',
