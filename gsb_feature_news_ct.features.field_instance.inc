@@ -553,7 +553,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'file_view_mode' => 'default',
         ),
         'type' => 'file_rendered',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'featured' => array(
         'label' => 'above',
@@ -725,7 +725,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'featured' => array(
         'label' => 'above',

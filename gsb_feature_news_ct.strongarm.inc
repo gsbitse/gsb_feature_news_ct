@@ -58,6 +58,9 @@ function gsb_feature_news_ct_strongarm() {
       'people_fpp' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
