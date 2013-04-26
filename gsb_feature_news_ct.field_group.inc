@@ -89,7 +89,7 @@ function gsb_feature_news_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Taxonomy',
-    'weight' => '11',
+    'weight' => '12',
     'children' => array(
       0 => 'field_business_insight_topic',
       1 => 'field_company_organization',

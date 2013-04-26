@@ -61,17 +61,20 @@ function gsb_feature_news_ct_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'event_listing' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '14',
+          'weight' => '15',
         ),
         'title' => array(
           'weight' => '2',
         ),
         'path' => array(
-          'weight' => '13',
+          'weight' => '14',
         ),
         'workbench_access' => array(
           'weight' => '0',
