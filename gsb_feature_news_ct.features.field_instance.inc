@@ -32,7 +32,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'share_services' => 'twitter, linkedin, facebook, google_plusone_share, email',
         ),
         'type' => 'addthis_basic_toolbox',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'megamenu' => array(
         'label' => 'above',
@@ -312,7 +312,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'featured' => array(
         'label' => 'above',
@@ -550,10 +550,10 @@ function gsb_feature_news_ct_field_default_field_instances() {
         'module' => 'file_entity',
         'settings' => array(
           'conditions' => array(),
-          'file_view_mode' => 'default',
+          'file_view_mode' => 'teaser',
         ),
         'type' => 'file_rendered',
-        'weight' => 3,
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',
@@ -725,7 +725,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 1,
       ),
       'featured' => array(
         'label' => 'above',
@@ -868,12 +868,9 @@ function gsb_feature_news_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'link',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'link_default',
-        'weight' => 9,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
       ),
       'megamenu' => array(
         'label' => 'above',
