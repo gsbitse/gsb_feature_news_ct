@@ -68,11 +68,6 @@ function gsb_feature_news_ct_ds_field_settings_info() {
         'conditions' => array(),
       ),
     ),
-    'post_date' => array(
-      'weight' => '1',
-      'label' => 'hidden',
-      'format' => 'ds_post_date_panopoly_time',
-    ),
   );
   $export['node|news|megamenu'] = $ds_fieldsetting;
 
@@ -185,13 +180,13 @@ function gsb_feature_news_ct_ds_layout_settings_info() {
         0 => 'field_file_single_public',
       ),
       'right' => array(
-        1 => 'post_date',
+        1 => 'field_date_published',
         2 => 'title',
       ),
     ),
     'fields' => array(
       'field_file_single_public' => 'left',
-      'post_date' => 'right',
+      'field_date_published' => 'right',
       'title' => 'right',
     ),
     'classes' => array(),
