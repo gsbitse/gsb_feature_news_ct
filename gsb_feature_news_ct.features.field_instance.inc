@@ -552,7 +552,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
   $field_instances['node-news-field_file_single_public'] = array(
     'bundle' => 'news',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Recommended size for uploaded images is 600x440.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -642,6 +642,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
           'media_default--media_browser_my_files' => 0,
           'media_internet' => 0,
           'upload' => 0,
+          'youtube' => 0,
         ),
         'maxlength_js_label' => '',
         'progress_indicator' => 'throbber',
@@ -1391,6 +1392,7 @@ function gsb_feature_news_ct_field_default_field_instances() {
   t('Header Image Caption');
   t('Industry');
   t('Media Contact');
+  t('Recommended size for uploaded images is 600x440.');
   t('Region');
   t('Related Links');
   t('Search field');
