@@ -459,11 +459,11 @@ function gsb_feature_news_ct_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'hs_taxonomy',
       'settings' => array(
         'maxlength_js_label' => '',
       ),
-      'type' => 'options_select',
+      'type' => 'taxonomy_hs',
       'weight' => 12,
     ),
     'workbench_access_field' => 0,
@@ -791,11 +791,11 @@ function gsb_feature_news_ct_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'hs_taxonomy',
       'settings' => array(
         'maxlength_js_label' => '',
       ),
-      'type' => 'options_select',
+      'type' => 'taxonomy_hs',
       'weight' => 13,
     ),
     'workbench_access_field' => 0,
@@ -1151,11 +1151,11 @@ function gsb_feature_news_ct_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'hs_taxonomy',
       'settings' => array(
         'maxlength_js_label' => '',
       ),
-      'type' => 'options_select',
+      'type' => 'taxonomy_hs',
       'weight' => 14,
     ),
     'workbench_access_field' => 0,
